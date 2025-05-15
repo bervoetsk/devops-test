@@ -7,7 +7,7 @@ WORKDIR /app
 # Install Git and build tools, clone the app
 RUN apt-get update && \
     apt-get install -y git build-essential && \
-    git clone https://github.com/gurkanakdeniz/example-flask-crud.git . && \
+    git clone https://github.com/bervoetsk/devops-test.git . && \
     apt-get remove -y git && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
